@@ -1,20 +1,39 @@
-import Head from 'next/head'
+
+import type { NextPage } from 'next';
+import Head from 'next/head';
 import Image from 'next/image'
+import BackgroundCircles from '../components/Backgroundcircles';
+import Header from '../components/Header';
 
 
-export default function Home() {
+
+const Home: NextPage = () => {
   return (
-    <div className="">
-      <Head>
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+     <Head>
         <title>Santorin</title>
         <meta name="description" content="All in one" />
         <link rel="icon" href="images/santorin-logo.png" />
       </Head>
 
-<div>
-  <h1> Welcome</h1>
-</div>
-<h1> Welcome</h1>
+
+<Header/>
+
+
+ {/* experience */}
+ <section id="Experience" className='snap-center'>
+<BackgroundCircles/>
+ </section>
+
+
+ {/* projects */}
+
+ {/* contact me */}
+    
+
+     
     </div>
   )
 }
+
+export default Home
