@@ -2,7 +2,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image'
-import BackgroundCircles from '../components/Backgroundcircles';
+import Intro from '../components/Intro';
 import Header from '../components/Header';
 
 
@@ -22,7 +22,8 @@ const Home: NextPage = () => {
 
  {/* experience */}
  <section id="Experience" className='snap-center'>
-<BackgroundCircles/>
+ 
+<Intro/>
  </section>
 
 
